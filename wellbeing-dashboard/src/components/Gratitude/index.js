@@ -20,7 +20,8 @@ export default function Gratitude() {
 
  
     async function handleCreate(gratitudeText) {
-      const response = await fetch(`http://localhost:3000/api/gratitudes`,{
+      const response = await fetch(`http://localhost:3000/api/gratitudes`,
+      {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json'
