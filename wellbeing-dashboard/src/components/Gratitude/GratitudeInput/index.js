@@ -1,24 +1,21 @@
-import React, { useState } from 'react';
-import Gratitude from '../index.js';
+import React, { useState } from "react";
 
-export default function GratitudeInput({handleClick}){
+export default function GratitudeInput({ handleClick }) {
+  const [userInput, setUserInput] = useState("");
 
-    const [userInput, setUserInput] = useState('');
-
-    function handleChange(e){
-        setUserInput(e.target.value)
-    }
-return (
+  function handleChange(e) {
+    setUserInput(e.target.value);
+  }
+  return (
     <section>
-            <input value={userInput} onChange={handleChange}/>
-            <button
-            onClick={() => {
-            handleClick(userInput);
-            }}
-        >
-            Submit
-            </button>
+      <input value={userInput} onChange={handleChange} />
+      <button
+        onClick={() => {
+          handleClick(userInput);
+        }}
+      >
+        Submit
+      </button>
     </section>
-)
-
+  );
 }
