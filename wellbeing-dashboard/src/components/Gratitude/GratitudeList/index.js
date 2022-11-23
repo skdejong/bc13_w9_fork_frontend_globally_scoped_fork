@@ -8,9 +8,8 @@ export default function GratitudeList({
   return (
     <ul>
       {list.length > 0 &&
-        list.map((listItem) => {
-          <li>{listItem}</li>;
-          // key={index}
+        list.map((listItem, index) => {
+        return <li key={index}>{listItem.gratitude}</li>;
           // handleEdit={() => {
           //   handleEdit(index);
           // }}
