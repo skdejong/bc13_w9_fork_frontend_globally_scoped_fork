@@ -8,7 +8,7 @@ export default function Gratitude() {
   const [gratitudes, setGratitudes] = useState(initialGrats);
 
   async function getGratitudes() {
-    const response = await fetch("http://localhost:3000/api/rg");
+    const response = await fetch("http://localhost:3000/api/gratitudes");
     const data = await response.json();
     setGratitudes(data.payload);
     
@@ -19,13 +19,13 @@ export default function Gratitude() {
   }, []);
 
   async function handleCreate(gratitudeText) {
-    const response = await fetch(`http://localhost:3000/api/rg`, {
+    const response = await fetch(`http://localhost:3000/api/gratitudes`, {
       method: "POST",
       mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(gratitudeText), //Remember to parse in the server
+      body: JSON.stringify({gratitude: gratitudeText}), //Remember to parse in the server
     });
     if (response.status === 201) {
       getGratitudes();
@@ -49,6 +49,7 @@ export default function Gratitude() {
     <>
       <GratitudeInput handleCreate={handleCreate} />
       <GratitudeList list={gratitudes} />
+      
 
       {/* // handleDelete={handleDelete}
         // handleEdit={handleEdit} */}
