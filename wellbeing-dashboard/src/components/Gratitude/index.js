@@ -11,9 +11,9 @@ export default function Gratitude() {
     const response = await fetch("http://localhost:3000/api/rg");
     const data = await response.json();
     setGratitudes(data.payload);
-    console.log(gratitudes);
+    
   }
-
+  console.log(gratitudes);
   useEffect(() => {
     getGratitudes();
   }, []);
