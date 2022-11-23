@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function GratitudeInput({ handleClick }) {
+export default function GratitudeInput({ handleCreate }) {
   const [userInput, setUserInput] = useState("");
 
   function handleChange(e) {
@@ -11,7 +11,7 @@ export default function GratitudeInput({ handleClick }) {
       <input value={userInput} onChange={handleChange} />
       <button
         onClick={() => {
-          handleClick(userInput);
+          handleCreate(userInput);
         }}
       >
         Submit

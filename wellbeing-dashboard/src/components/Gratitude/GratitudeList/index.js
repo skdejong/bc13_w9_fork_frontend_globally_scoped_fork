@@ -3,23 +3,20 @@ import GratitudeListItem from "./GratitudeListItem";
 
 export default function GratitudeList({
   list,
-  editGratitude,
-  deleteGratitude,
+  // handleEdit, handleDelete
 }) {
   return (
     <ul>
       {list.length > 0 &&
-        list.map((listItem, i) => {
-          <GratitudeListItem
-            key={i}
-            handleEdit={() => {
-              handleEdit(i);
-            }}
-            handleDelete={() => {
-              handleDelete(i);
-            }}
-            text={listItem}
-          />;
+        list.map((listItem) => {
+          <li>{listItem}</li>;
+          // key={index}
+          // handleEdit={() => {
+          //   handleEdit(index);
+          // }}
+          // handleDelete={() => {
+          //   handleDelete(index);
+          // }}
         })}
     </ul>
   );
