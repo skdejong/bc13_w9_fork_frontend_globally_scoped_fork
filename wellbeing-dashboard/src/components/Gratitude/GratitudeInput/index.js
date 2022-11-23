@@ -6,12 +6,18 @@ export default function GratitudeInput({ handleCreate }) {
   function handleChange(e) {
     setUserInput(e.target.value);
   }
+
+  function handleClick(userInput) {
+    handleCreate(userInput);
+    setUserInput("");
+  }
+
   return (
     <section>
       <input value={userInput} onChange={handleChange} />
       <button
         onClick={() => {
-          handleCreate(userInput);
+          handleClick(userInput);
         }}
       >
         Submit

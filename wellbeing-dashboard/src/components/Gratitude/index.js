@@ -6,13 +6,12 @@ const initialGrats = [];
 
 export default function Gratitude() {
   const [gratitudes, setGratitudes] = useState(initialGrats);
-  const [response, setResponse] = useState()
+  const [response, setResponse] = useState();
 
   async function getGratitudes() {
     const response = await fetch("http://localhost:3000/api/gratitudes");
     const data = await response.json();
     setGratitudes(data.payload);
-    
   }
   console.log(gratitudes);
   useEffect(() => {
@@ -20,16 +19,16 @@ export default function Gratitude() {
   }, [response]);
 
   async function handleCreate(gratitudeText) {
-    console.log(gratitudeText)
+    console.log(gratitudeText);
     const response = await fetch(`http://localhost:3000/api/gratitudes`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({gratitude: gratitudeText}), //Remember to parse in the server
+      body: JSON.stringify({ gratitude: gratitudeText }), //Remember to parse in the server
     });
-    const dataresponse = await response.json()
-    setResponse(dataresponse)
+    const dataresponse = await response.json();
+    setResponse(dataresponse);
     // if (response.status === 201) {
     //   getGratitudes();
     // }
@@ -42,17 +41,14 @@ export default function Gratitude() {
         method: "DELETE",
       }
     );
-
-    if (response.status === 201) {
-      getGratitudes();
-    }
+    const dataresponse = await response.json();
+    setResponse(dataresponse);
   }
 
   return (
     <>
       <GratitudeInput handleCreate={handleCreate} />
-      <GratitudeList list={gratitudes} />
-      
+      <GratitudeList list={gratitudes} handleDelete={handleDelete} />
 
       {/* // handleDelete={handleDelete}
         // handleEdit={handleEdit} */}

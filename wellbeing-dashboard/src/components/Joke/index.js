@@ -1,28 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
+export default function Joke() {
+  const [joke, setJoke] = useState("");
 
-
-export default function Joke(){
-    const [joke, setJoke] = useState('');
-
-    useEffect(() => {
-        async function getJoke(){
-            const response = await fetch("http://icanhazdadjoke.com", {
-            headers: {
-            Accept: "application/json",
+  useEffect(() => {
+    async function getJoke() {
+      const response = await fetch("http://icanhazdadjoke.com", {
+        headers: {
+          Accept: "application/json",
         },
-        });
-        const data = await response.json()
-            console.log(data)
+        // mode: "no-cors",
+      });
+      const data = await response.json();
+      console.log(data);
+      setJoke(data.joke);
+    }
+    getJoke();
+  }, []);
 
-            setJoke(data.joke)
-        }
-        getJoke();
-    }, [])
-
-    return (
-        <>
-            <p>{joke}</p>
-        </>
-    )
+  return (
+    <>
+      <p>{joke}</p>
+    </>
+  );
 }

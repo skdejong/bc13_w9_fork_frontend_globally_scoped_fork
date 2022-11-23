@@ -3,13 +3,25 @@ import GratitudeListItem from "./GratitudeListItem";
 
 export default function GratitudeList({
   list,
-  // handleEdit, handleDelete
+  handleDelete,
+  // handleEdit
 }) {
   return (
     <ul>
       {list.length > 0 &&
-        list.map((listItem, index) => {
-        return <li key={index}>{listItem.gratitude}</li>;
+        list.map((listItem) => {
+          return (
+            <li key={listItem.id}>
+              {listItem.gratitude}{" "}
+              <button
+                onClick={() => {
+                  handleDelete(listItem.id);
+                }}
+              >
+                X
+              </button>
+            </li>
+          );
           // handleEdit={() => {
           //   handleEdit(index);
           // }}
