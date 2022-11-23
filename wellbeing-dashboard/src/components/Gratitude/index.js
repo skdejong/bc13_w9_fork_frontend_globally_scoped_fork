@@ -6,6 +6,7 @@ const initialGrats = [];
 
 export default function Gratitude() {
   const [gratitudes, setGratitudes] = useState(initialGrats);
+  const [response, setResponse] = useState()
 
   async function getGratitudes() {
     const response = await fetch("http://localhost:3000/api/gratitudes");
@@ -16,20 +17,22 @@ export default function Gratitude() {
   console.log(gratitudes);
   useEffect(() => {
     getGratitudes();
-  }, []);
+  }, [response]);
 
   async function handleCreate(gratitudeText) {
+    console.log(gratitudeText)
     const response = await fetch(`http://localhost:3000/api/gratitudes`, {
       method: "POST",
-      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({gratitude: gratitudeText}), //Remember to parse in the server
     });
-    if (response.status === 201) {
-      getGratitudes();
-    }
+    const dataresponse = await response.json()
+    setResponse(dataresponse)
+    // if (response.status === 201) {
+    //   getGratitudes();
+    // }
   }
 
   async function handleDelete(index) {
