@@ -48,8 +48,10 @@ export default function Gratitude() {
 
   return (
     <div className="GratitudeParent">
-      <p>Today I'm grateful for...</p>
+    <div className="inputBox">
+      <h3>Today I'm grateful for...</h3>
       <GratitudeInput handleCreate={handleCreate} />
+      </div>
       <GratitudeList list={gratitudes} handleDelete={handleDelete} />
 
       {/* // handleDelete={handleDelete}

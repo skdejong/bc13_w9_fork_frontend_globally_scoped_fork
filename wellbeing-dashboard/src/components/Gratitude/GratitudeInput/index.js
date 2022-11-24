@@ -21,7 +21,7 @@ export default function GratitudeInput({ handleCreate }) {
           handleClick(userInput);
         }}
       >
-        Submit
+        Add
       </button>
     </section>
   );
