@@ -12,19 +12,19 @@ export default function Activities() {
       ]);
     }
     if (category === "entertainment") {
-      setListPhysical([
+      setListEntertainment([
         ...listEntertainment.slice(0, i),
         ...listEntertainment.slice(i + 1),
       ]);
     }
     if (category === "creative") {
-      setListPhysical([
+      setListCreative([
         ...listCreative.slice(0, i),
         ...listCreative.slice(i + 1),
       ]);
     }
     if (category === "relaxation") {
-      setListPhysical([
+      setListRelaxation([
         ...listRelaxation.slice(0, i),
         ...listRelaxation.slice(i + 1),
       ]);
