@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaRedo } from "react-icons/fa";
 
 export default function Joke() {
   const [joke, setJoke] = useState("");
@@ -19,8 +20,11 @@ export default function Joke() {
   }, []);
 
   return (
-    <>
+    <aside>
       <p>{joke}</p>
-    </>
+      <button className="JokeButton">
+        <FaRedo />
+      </button>
+    </aside>
   );
 }
