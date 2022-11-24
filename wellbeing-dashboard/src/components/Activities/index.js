@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import './index.css';
+import "./index.css";
 import ActivitiesInput from "./ActivitiesInput";
-
 
 export default function Activities() {
   function handleDelete(i, category) {
@@ -92,7 +91,7 @@ export default function Activities() {
   ];
 
   return (
-    <section className="Activities">   
+    <section className="Activities">
       {categories.map((category) => {
         return (
           <div className="Activity">
@@ -117,12 +116,12 @@ export default function Activities() {
                 </li>
               );
             })}
-          </div>
+
             <ActivitiesInput
               category={category.category}
               addActivity={addActivity}
             />
-          </>
+          </div>
         );
       })}
     </section>

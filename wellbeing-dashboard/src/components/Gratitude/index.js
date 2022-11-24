@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GratitudeInput from "./GratitudeInput/index.js";
 import GratitudeList from "./GratitudeList/index.js";
-import './index.css';
+import "./index.css";
 
 const initialGrats = [];
 
@@ -48,6 +48,7 @@ export default function Gratitude() {
 
   return (
     <div className="GratitudeParent">
+      <p>Today I'm grateful for...</p>
       <GratitudeInput handleCreate={handleCreate} />
       <GratitudeList list={gratitudes} handleDelete={handleDelete} />
 

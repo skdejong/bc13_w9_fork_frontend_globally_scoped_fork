@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './index.css';
+import "./index.css";
 
 export default function GratitudeInput({ handleCreate }) {
   const [userInput, setUserInput] = useState("");
