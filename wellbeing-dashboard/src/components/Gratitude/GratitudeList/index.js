@@ -6,7 +6,7 @@ export default function GratitudeList({
   // handleEdit
 }) {
   return (
-    <ul>
+    <ul className="GratitudeList">
       {list.length > 0 &&
         list.map((listItem) => {
           return (

@@ -46,12 +46,12 @@ export default function Gratitude() {
   }
 
   return (
-    <>
+    <div className="GratitudeParent">
       <GratitudeInput handleCreate={handleCreate} />
       <GratitudeList list={gratitudes} handleDelete={handleDelete} />
 
       {/* // handleDelete={handleDelete}
         // handleEdit={handleEdit} */}
-    </>
+    </div>
   );
 }
