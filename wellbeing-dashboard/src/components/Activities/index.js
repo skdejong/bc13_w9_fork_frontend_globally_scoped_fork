@@ -97,32 +97,35 @@ export default function Activities() {
         return (
           <div className="Activity">
             <h2>{category.name}</h2>
-            <label>
-              Progress:
-              <progress value="32" max="100">
-                32%
-              </progress>
-            </label>
-            {category.list.map((listItem, i) => {
-              return (
-                <li className="actList">
-                  {listItem.text}
-                  <button className="actButton"
-                    onClick={() => {
-                      handleDelete(i, listItem.category);
-                    }}
-                  >
-                    <FaTrashAlt />
-                  </button>
-                </li>
-              );
-            })}
-            <div className="actInput">
-              <ActivitiesInput
-                category={category.category}
-                addActivity={addActivity}
-              />
-            </div>  
+            <div className="progress">
+              <label>
+                Progress: &ensp;
+                <progress value="32" max="100">
+                  32%
+                </progress>
+              </label>
+            </div>
+            <div className="scroll">
+              {category.list.map((listItem, i) => {
+                return (
+                  <li className="actList">
+                    {listItem.text}
+                    <button
+                      className="actButton"
+                      onClick={() => {
+                        handleDelete(i, listItem.category);
+                      }}
+                    >
+                      <FaTrashAlt />
+                    </button>
+                  </li>
+                );
+              })}
+            </div>
+            <ActivitiesInput
+              category={category.category}
+              addActivity={addActivity}
+            />
           </div>
         );
       })}

@@ -14,13 +14,12 @@ export default function Gratitude() {
     const data = await response.json();
     setGratitudes(data.payload);
   }
-  console.log(gratitudes);
+
   useEffect(() => {
     getGratitudes();
   }, [response]);
 
   async function handleCreate(gratitudeText) {
-    console.log(gratitudeText);
     const response = await fetch(`http://localhost:3000/api/gratitudes`, {
       method: "POST",
       headers: {
@@ -48,17 +47,14 @@ export default function Gratitude() {
 
   return (
     <div className="GratitudeParent">
-    <div className="inputBox">
-      <h3>Today I'm grateful for...</h3>
-      <GratitudeInput handleCreate={handleCreate} />
-    </div>
+      <div className="inputBox">
+        <h3>Today I'm grateful for...</h3>
+        <GratitudeInput handleCreate={handleCreate} />
+      </div>
       <div className="gratitudeListBox">
-      <h3>My Gratitude List:</h3>
-      <GratitudeList list={gratitudes} handleDelete={handleDelete} />
-
-      {/* // handleDelete={handleDelete}
-        // handleEdit={handleEdit} */}
-    </div>
+        <h3>My Gratitude List:</h3>
+        <GratitudeList list={gratitudes} handleDelete={handleDelete} />
+      </div>
     </div>
   );
 }

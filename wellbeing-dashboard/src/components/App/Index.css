@@ -2,15 +2,14 @@
   --main-bg-color: #2e4057;
 }
 
-body{
-    background-color: var(--main-bg-color);
+body {
+  background-color: var(--main-bg-color);
 }
 
-.app{
-    max-width: 1000px;
-    margin: 0 auto;
-    
-
+.app {
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0 auto;
 }
 
 .layoutContainer {
@@ -19,4 +18,5 @@ body{
 
 .left {
   margin: 0 20px;
+  max-width: 70vw;
 }

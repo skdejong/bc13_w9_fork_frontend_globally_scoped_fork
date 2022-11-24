@@ -4,19 +4,71 @@ html {
 
 p {
   display: inline;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  margin-left: 15px;
 }
 
 aside {
+  color: #2d2d2d;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #99b2dd;
+  margin-bottom: 20px;
+  border-radius: 50px;
 }
 
-.JokeButton {
+.jokeButton {
   display: inline;
   height: 40px;
   min-width: 40px;
   border-radius: 50%;
   align-content: center;
   text-align: center;
+  border: none;
+}
+
+.gratitudeDeleteButton {
+  border: none;
+  background-color: #f5f5fc;
+}
+
+.gratitudeDeleteButton:hover {
+  color: red;
+}
+
+.emoji {
+  margin-bottom: -5px;
+  font-size: 30px;
+}
+
+button {
+  background-color: #f5f5fc;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.activInput {
+  width: 80%;
+  border: none;
+  border-top: 1px solid #99b2dd;
+  border-bottom-left-radius: 15px;
+  height: 26px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.activButton {
+  width: 20%;
+  height: 38px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  background-color: #99b2dd;
 }
