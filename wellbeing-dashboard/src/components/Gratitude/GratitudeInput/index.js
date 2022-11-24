@@ -16,7 +16,7 @@ export default function GratitudeInput({ handleCreate }) {
   return (
     <section className="GratitudeInput">
       <input value={userInput} onChange={handleChange} />
-      <button
+      <button className="addButton"
         onClick={() => {
           handleClick(userInput);
         }}

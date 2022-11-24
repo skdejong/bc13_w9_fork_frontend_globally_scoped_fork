@@ -1,0 +1,14 @@
+.gratitudeListBox {
+    background-color: rgb(117,159,125);
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gratitudeDeleteButton {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
