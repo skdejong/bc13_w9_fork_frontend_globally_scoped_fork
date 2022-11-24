@@ -7,3 +7,12 @@
 .Activity{
     width: 50%;
 }
+
+h2 {
+    text-align: center;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}

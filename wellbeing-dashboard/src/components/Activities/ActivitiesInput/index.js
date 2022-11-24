@@ -12,7 +12,7 @@ export default function ActivitiesInput({ category, addActivity }) {
     setUserInput("");
   }
   return (
-    <>
+    <div className="input-field">
       <input
         id={`${category}-input`}
         value={userInput}
@@ -26,6 +26,6 @@ export default function ActivitiesInput({ category, addActivity }) {
       >
         Submit
       </button>
-    </>
+    </div>
   );
 }
