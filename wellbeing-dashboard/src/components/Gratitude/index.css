@@ -1,0 +1,11 @@
+.GratitudeParent {
+    padding: 15px;
+    margin: 10px;
+    width: 350px;
+    min-height: 500px;
+    max-height: 650px;
+    background-color: #1a4147;
+    text-align: center;
+    border-radius: 1em;
+    
+}
