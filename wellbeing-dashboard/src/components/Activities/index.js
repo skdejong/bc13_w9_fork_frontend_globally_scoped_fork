@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import ActivitiesInput from "./ActivitiesInput";
+import { FaTrashAlt } from "react-icons/fa";
 
 export default function Activities() {
   function handleDelete(i, category) {
@@ -111,7 +112,7 @@ export default function Activities() {
                       handleDelete(i, listItem.category);
                     }}
                   >
-                    X
+                    <FaTrashAlt />
                   </button>
                 </li>
               );

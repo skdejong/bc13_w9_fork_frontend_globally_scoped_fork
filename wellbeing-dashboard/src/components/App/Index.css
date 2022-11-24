@@ -1,6 +1,6 @@
 :root {
-    --main-bg-color: #2E4057;
-  }
+  --main-bg-color: #2e4057;
+}
 
 body{
     background-color: var(--main-bg-color);
@@ -10,9 +10,13 @@ body{
     max-width: 1000px;
     margin: 0 auto;
     
+
 }
 
-.layoutContainer{
-    display: flex;
+.layoutContainer {
+  display: flex;
+}
 
+.left {
+  margin: 0 20px;
 }
