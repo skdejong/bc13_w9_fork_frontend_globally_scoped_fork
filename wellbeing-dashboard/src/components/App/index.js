@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       <div className="layoutContainer">
-        <div>
+        <div className="left">
           <Joke />
           <Activities />
         </div>

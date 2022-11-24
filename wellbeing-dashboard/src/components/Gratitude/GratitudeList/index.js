@@ -1,5 +1,6 @@
 import React from "react";
-import './index.css';
+import "./index.css";
+import { FaTrashAlt } from "react-icons/fa";
 
 export default function GratitudeList({
   list,
@@ -19,8 +20,8 @@ export default function GratitudeList({
                   handleDelete(listItem.id);
                 }}
               >
-              X
-              </button>
+                <FaTrashAlt />
+       </button>
             </li>
           );
           // handleEdit={() => {
