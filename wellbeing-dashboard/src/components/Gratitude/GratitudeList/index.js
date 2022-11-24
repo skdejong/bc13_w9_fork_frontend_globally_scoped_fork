@@ -11,13 +11,13 @@ export default function GratitudeList({
         list.map((listItem) => {
           return (
             <li key={listItem.id}>
-              {listItem.gratitude}{" "}
+              {listItem.gratitude}
               <button
                 onClick={() => {
                   handleDelete(listItem.id);
                 }}
               >
-                X
+                <i className="fi fi-ss-trash"></i>
               </button>
             </li>
           );
