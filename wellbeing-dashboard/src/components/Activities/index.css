@@ -1,0 +1,9 @@
+.Activities {
+    display:flex;
+    flex-wrap: wrap;    
+    background-color: greenyellow;    
+}
+
+.Activity{
+    width: 50%;
+}

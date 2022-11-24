@@ -7,11 +7,16 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="App">      
-      <Gratitude />      
-      <Joke />  
-      <Activities />    
-    </div>
+    
+  <div className="app">
+    <div className="layoutContainer">       
+        <div>
+          <Joke />  
+          <Activities />    
+        </div> 
+      <Gratitude /> 
+      </div>         
+  </div>
   );
 }
 

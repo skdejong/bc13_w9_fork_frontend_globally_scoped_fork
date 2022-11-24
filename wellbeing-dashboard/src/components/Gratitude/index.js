@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import GratitudeInput from "./GratitudeInput/index.js";
 import GratitudeList from "./GratitudeList/index.js";
+import './index.css';
 
 const initialGrats = [];
 

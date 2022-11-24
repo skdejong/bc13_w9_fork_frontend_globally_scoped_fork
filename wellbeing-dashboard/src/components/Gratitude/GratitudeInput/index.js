@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './index.css';
 
 export default function GratitudeInput({ handleCreate }) {
   const [userInput, setUserInput] = useState("");
@@ -13,7 +14,7 @@ export default function GratitudeInput({ handleCreate }) {
   }
 
   return (
-    <section>
+    <section className="GratitudeInput">
       <input value={userInput} onChange={handleChange} />
       <button
         onClick={() => {
