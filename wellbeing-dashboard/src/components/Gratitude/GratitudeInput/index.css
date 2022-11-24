@@ -1,5 +1,21 @@
 .GratitudeInput {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     
 }
+
+input {
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.addButton {
+    border-radius: 25px;
+    width: 75px;
+    background-color: rgb(117,159,125);
+    color: rgb(255,255,255);
+    align-self: center;
+    border: none;
+}
+

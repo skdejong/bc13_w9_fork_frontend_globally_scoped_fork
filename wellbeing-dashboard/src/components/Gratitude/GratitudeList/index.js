@@ -12,15 +12,16 @@ export default function GratitudeList({
       {list.length > 0 &&
         list.map((listItem) => {
           return (
-            <li key={listItem.id}>
+            <li className="gratitudeDeleteButton"
+            key={listItem.id}>
               {listItem.gratitude}
-              <button
+              <button 
                 onClick={() => {
                   handleDelete(listItem.id);
                 }}
               >
                 <FaTrashAlt />
-              </button>
+       </button>
             </li>
           );
           // handleEdit={() => {
