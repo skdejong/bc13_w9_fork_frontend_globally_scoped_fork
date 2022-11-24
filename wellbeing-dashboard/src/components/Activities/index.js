@@ -104,9 +104,9 @@ export default function Activities() {
             </label>
             {category.list.map((listItem, i) => {
               return (
-                <li>
+                <li className="actList">
                   {listItem.text}
-                  <button
+                  <button className="actButton"
                     onClick={() => {
                       handleDelete(i, listItem.category);
                     }}
@@ -116,11 +116,12 @@ export default function Activities() {
                 </li>
               );
             })}
-
-            <ActivitiesInput
-              category={category.category}
-              addActivity={addActivity}
-            />
+            <div className="actInput">
+              <ActivitiesInput
+                category={category.category}
+                addActivity={addActivity}
+              />
+            </div>  
           </div>
         );
       })}

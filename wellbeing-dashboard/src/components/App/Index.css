@@ -2,6 +2,10 @@
     --main-bg-color: #2E4057;
   }
 
+body{
+    background-color: var(--main-bg-color);
+}
+
 .app{
     max-width: 1000px;
     margin: 0 auto;
