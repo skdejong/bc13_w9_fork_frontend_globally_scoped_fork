@@ -1,5 +1,4 @@
 import React from "react";
-import GratitudeListItem from "./GratitudeListItem";
 
 export default function GratitudeList({
   list,
