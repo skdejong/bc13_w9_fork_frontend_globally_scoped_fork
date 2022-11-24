@@ -1,0 +1,9 @@
+.input-field{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.input-child {
+    width: 49%;
+}
+

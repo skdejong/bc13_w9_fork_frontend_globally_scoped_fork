@@ -2,9 +2,15 @@
   --main-bg-color: #2e4057;
 }
 
-.app {
-  max-width: 1000px;
-  margin: 0 auto;
+body{
+    background-color: var(--main-bg-color);
+}
+
+.app{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+
 }
 
 .layoutContainer {

@@ -12,20 +12,21 @@ export default function ActivitiesInput({ category, addActivity }) {
     setUserInput("");
   }
   return (
-    <>
-      <input
-        id={`${category}-input`}
-        value={userInput}
-        onChange={handleChange}
-      />
-      <button
-        onClick={() => {
-          console.log(category);
-          handleClick({ text: userInput, category: category });
-        }}
-      >
-        Submit
-      </button>
-    </>
+    <div className="input-field">
+        <input
+          id={`${category}-input`}
+          value={userInput}
+          onChange={handleChange}
+        />      
+        <button
+          onClick={() => {
+            console.log(category);
+            handleClick({ text: userInput, category: category });
+          }}
+        >
+          Submit
+        </button>
+      
+    </div>
   );
 }
