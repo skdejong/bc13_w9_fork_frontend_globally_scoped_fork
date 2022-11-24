@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './index.css';
 
 export default function Activities() {
   const initListPhysical = [
@@ -42,10 +43,10 @@ export default function Activities() {
   console.log(categories.list);
 
   return (
-    <section>
+    <section className="Activities">
       {categories.map((category) => {
         return (
-          <>
+          <div className="Activity">
             <h2>{category.name}</h2>
             <label>
               Progress:
@@ -56,7 +57,7 @@ export default function Activities() {
             {category.list.map((listItem) => {
               return <li>{listItem.text}</li>;
             })}
-          </>
+          </div>
         );
       })}
     </section>

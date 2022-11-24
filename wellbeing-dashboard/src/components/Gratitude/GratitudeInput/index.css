@@ -1,4 +1,5 @@
-.GratitudeList {
-    text-align: justify;
-    font-size: 15vw;    
+.GratitudeInput {
+    display:flex;
+    justify-content: center;
+    
 }
