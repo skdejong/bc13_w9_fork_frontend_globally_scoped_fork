@@ -1,0 +1,22 @@
+html {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  display: inline;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.JokeButton {
+  display: inline;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  align-content: center;
+  text-align: center;
+}
