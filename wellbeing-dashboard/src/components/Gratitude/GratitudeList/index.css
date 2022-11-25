@@ -14,10 +14,6 @@
   border: none;
 }
 
-.gratitudeListItem :hover {
-  background-color: #dcdce4;
-}
-
 .emoji {
   margin-bottom: -5;
   size: 30px;

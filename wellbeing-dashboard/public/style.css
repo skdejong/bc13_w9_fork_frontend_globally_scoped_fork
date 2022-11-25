@@ -2,6 +2,10 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+body {
+  max-height: 100vh;
+}
+
 p {
   display: inline;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -17,7 +21,7 @@ aside {
   justify-content: space-between;
   padding: 10px 30px;
   background-color: #99b2dd;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border-radius: 50px;
 }
 
@@ -33,6 +37,7 @@ aside {
 
 .gratitudeDeleteButton {
   border: none;
+  width: min-content;
   background-color: #f5f5fc;
 }
 

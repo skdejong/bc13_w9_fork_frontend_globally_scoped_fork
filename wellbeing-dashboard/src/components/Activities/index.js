@@ -49,28 +49,28 @@ export default function Activities() {
   }
 
   const initListPhysical = [
-    { id: 1, text: "Stretch", category: "physical" },
-    { id: 2, text: "Go for a walk", category: "physical" },
+    { id: 1, text: "Stretched", category: "physical" },
+    { id: 2, text: "Went for a walk", category: "physical" },
     { id: 3, text: "Yoga routine", category: "physical" },
-    { id: 4, text: "Do the macarena", category: "physical" },
+    { id: 4, text: "Diid the macarena", category: "physical" },
   ];
   const initListEntertainment = [
-    { id: 1, text: "Listen to music", category: "entertainment" },
-    { id: 2, text: "Watch a film", category: "entertainment" },
-    { id: 3, text: "Play a game", category: "entertainment" },
-    { id: 4, text: "Watch YouTube videos", category: "entertainment" },
+    { id: 1, text: "Listened to an album", category: "entertainment" },
+    { id: 2, text: "Watched a film", category: "entertainment" },
+    { id: 3, text: "Played a video game", category: "entertainment" },
+    { id: 4, text: "Watched YouTube videos", category: "entertainment" },
   ];
   const initListCreative = [
-    { id: 1, text: "Do some knitting", category: "creative" },
-    { id: 2, text: "Work on some artwork", category: "creative" },
-    { id: 3, text: "Practise an instrument", category: "creative" },
-    { id: 4, text: "Write a journal entry", category: "creative" },
+    { id: 1, text: "Knitted 20 rows", category: "creative" },
+    { id: 2, text: "Did some artwork", category: "creative" },
+    { id: 3, text: "Practised violin", category: "creative" },
+    { id: 4, text: "Wrote in my journal", category: "creative" },
   ];
   const initListRelaxation = [
-    { id: 1, text: "Take a bubble bath", category: "relaxation" },
-    { id: 2, text: "Meditate", category: "relaxation" },
-    { id: 3, text: "Socialise", category: "relaxation" },
-    { id: 4, text: "Pat your pet", category: "relaxation" },
+    { id: 1, text: "Had a bubble bath", category: "relaxation" },
+    { id: 2, text: "Meditated", category: "relaxation" },
+    { id: 3, text: "Socialised", category: "relaxation" },
+    { id: 4, text: "Patted my pet", category: "relaxation" },
   ];
   const [listPhysical, setListPhysical] = useState(initListPhysical);
   const [listEntertainment, setListEntertainment] = useState(
@@ -91,36 +91,44 @@ export default function Activities() {
     { id: 4, name: "Relaxation", category: "relaxation", list: listRelaxation },
   ];
 
+  let progValue = 0;
+
   return (
     <section className="Activities">
       {categories.map((category) => {
+        progValue = category.list.length;
         return (
           <div className="Activity">
-            <h2>{category.name}</h2>
-            <div className="progress">
-              <label>
-                Progress: &ensp;
-                <progress value="32" max="100">
-                  32%
-                </progress>
-              </label>
-            </div>
-            <div className="scroll">
-              {category.list.map((listItem, i) => {
-                return (
-                  <li className="actList">
-                    {listItem.text}
-                    <button
-                      className="actButton"
-                      onClick={() => {
-                        handleDelete(i, listItem.category);
-                      }}
-                    >
-                      <FaTrashAlt />
-                    </button>
-                  </li>
-                );
-              })}
+            <div class="actTop">
+              <h2>{category.name}</h2>
+              <div className="progress">
+                <label class="label">
+                  Progress: {progValue}/8 &emsp;
+                  <progress
+                    class="progress"
+                    value={progValue}
+                    max="8"
+                  ></progress>
+                </label>
+              </div>
+
+              <div className="scroll">
+                {category.list.map((listItem, i) => {
+                  return (
+                    <li className="actList">
+                      {listItem.text}
+                      <button
+                        className="actButton"
+                        onClick={() => {
+                          handleDelete(i, listItem.category);
+                        }}
+                      >
+                        <FaTrashAlt />
+                      </button>
+                    </li>
+                  );
+                })}
+              </div>
             </div>
             <ActivitiesInput
               category={category.category}
