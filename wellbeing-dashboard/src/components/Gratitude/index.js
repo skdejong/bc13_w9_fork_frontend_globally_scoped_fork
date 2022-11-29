@@ -3,10 +3,8 @@ import GratitudeInput from "./GratitudeInput/index.js";
 import GratitudeList from "./GratitudeList/index.js";
 import "./index.css";
 
-const initialGrats = [];
-
 export default function Gratitude() {
-  const [gratitudes, setGratitudes] = useState(initialGrats);
+  const [gratitudes, setGratitudes] = useState([]);
   const [response, setResponse] = useState();
 
   async function getGratitudes() {
@@ -29,9 +27,6 @@ export default function Gratitude() {
     });
     const dataresponse = await response.json();
     setResponse(dataresponse);
-    // if (response.status === 201) {
-    //   getGratitudes();
-    // }
   }
 
   async function handleDelete(index) {

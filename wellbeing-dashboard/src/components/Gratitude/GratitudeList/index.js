@@ -9,7 +9,7 @@ export default function GratitudeList({
 }) {
   return (
     <ul className="GratitudeList">
-      {list.length > 0 &&
+      {list.length > 0 &&  //this line 12 conditional rendering. Checks if there are any items in the list. If there are, it will continue with the rest of this JS code. If not, it won't render anything and it also won't give an error.
         list.map((listItem) => {
           return (
             <li className="gratitudeListItem" key={listItem.id}>

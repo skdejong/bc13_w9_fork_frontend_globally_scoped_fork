@@ -7,14 +7,10 @@ body {
 }
 
 .app {
+  display: flex;
   max-width: 100vw;
   height: 100%;
   margin: 0 auto;
-}
-
-.layoutContainer {
-  display: flex;
-  height: 95vh;
 }
 
 .left {
