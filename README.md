@@ -1,30 +1,31 @@
 
 # Insight Dashboard
 
-On week 9 at the School of Code bootcamp, we were given the challenge to design a full stack JavaScript app which helped to solve challenges that bootcampers face while learning remotely. We decided to create a “wellbeing assistant.” 
+On week 9 at the School of Code bootcamp, we were put into groups of four and asked to design a full stack web application which helps to address challenges that bootcampers face while learning remotely. On the Friday of that week we presented our solution to a panel of judges from the industry. We decided to create a dashboard to help bootcampers decompresses after an intense day of learning.
 
 ## API Reference
 
-#### Get all items
+#### Get all items in the Gratitude List 
 
-```http
+```
   GET /api/gratitudes
 ```
-#### Delete an item from the Gratitudes list
 
-```http
+#### Delete an item from the Gratitude list
+
+```
   DELETE /api/gratitudes/:id
 ```
 
 ## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#759F7D](https://via.placeholder.com/10/759F7D?text=+) #759F7D |
-| Example Color | ![#2E4057](https://via.placeholder.com/10/2E4057?text=+) #2E4057 |
-| Example Color | ![#99B2DD](https://via.placeholder.com/10/99B2DD?text=+) #99B2DD |
-| Example Color | ![#F5F5FC](https://via.placeholder.com/10/F5F5FC?text=+) #F5F5FC |
+![Color Palette](Color%20Palette%20for%20Globally%20Scoped%20Project.jpg)
 
+#### Tools used:
+ Jamboard, Figma, Trello, VSCode, Git, GitHub, Zoom, Google docs, and Google Slides
+
+#### Tech Stack used:
+ JavaScript ES6, Node.js, Expres.js, React.js, PostgreSQL (ElephantSQL and Railway.app), HTML, and CSS
 
 ## Lessons Learned
 
@@ -37,7 +38,8 @@ This week, we lived out the following values from The Agile Manifesto:
 * Individual and interactions over processes and tools and 
 * Working software over comprehensive documents 
 
-On Thursday morning, we made a recovery plan, reviewed our MVP, prioritized accordingly, and scaled back.
+On Thursday morning of our project week, we made a recovery plan, reviewed our MVP, prioritized accordingly, and scaled back. At the end of the week we presented to the judges a functioning app which was coded almost entirely in a day. 
+
 ## Authors
 
 - [@GabrielFdeOliveira](https://www.github.com/GabrielFdeOliveira)
