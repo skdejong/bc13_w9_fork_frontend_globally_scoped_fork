@@ -3,6 +3,9 @@
 
 On week 9 at the School of Code bootcamp, we were put into groups of four and asked to design a full stack web application which helps to address challenges that bootcampers face while learning remotely. On the Friday of that week we presented our solution to a panel of judges from the industry. We decided to create a dashboard to help bootcampers decompresses after an intense day of learning.
 
+## Demo of our app
+https://user-images.githubusercontent.com/107569008/205257841-104a7ae3-c83f-413b-9147-73be8e1ba7ac.mp4
+
 ## API Reference
 
 #### Get all items in the Gratitude List 
