@@ -12,7 +12,7 @@ import "./index.css";
 export default function App() {
   return (
     /**
-     * Here we group our three components inside two divs so we could display them as we wanted using flexbox at the front page  */
+     * Here we group our three components inside two divs so we could display them as we wanted using flexbox on the front page  */
     <div className="app">
       <div className="left">
         <Joke />

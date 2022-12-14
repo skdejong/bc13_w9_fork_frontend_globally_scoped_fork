@@ -57,7 +57,11 @@ re-rendering the component only when this state changes */
   }
 
   /**
-   * This component (Gratitude) has two child components which we are rendering below, we are also passing information from this file to them via props, the fn "handleCreate", our "gratitude" state and the "handleDelete" fn   */ 
+   * This component (Gratitude) has two child components which we are rendering below. 
+   * We are also passing information from this file to them via props: 
+   *    the function "handleCreate", 
+   *    our "gratitudes" state, and 
+   *    the "handleDelete" function   */ 
   return (
     <div className="GratitudeParent">
       <div className="inputBox">
