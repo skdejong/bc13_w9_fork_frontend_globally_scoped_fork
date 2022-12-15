@@ -22,3 +22,11 @@ export default function App() {
     </div>
   );
 }
+
+
+/* 
+This code defines a React component called App that displays three other components: Activities, Gratitude, and Joke. 
+The App component uses the div element with the app class to group the other components inside it. It then uses the left class to group the Joke and Activities components inside a div element, and displays the Gratitude component on its own.
+
+The App component assumes that the other three components have been imported from the specified files. It also uses the index.css file to apply styles to the components.
+*/

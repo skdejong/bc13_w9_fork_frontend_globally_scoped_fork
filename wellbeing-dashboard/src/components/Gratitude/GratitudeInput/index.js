@@ -46,3 +46,17 @@ Here we define that "onClick" the "handleClick" function will be called using th
     </section>
   );
 }
+
+
+/* 
+This file is a React functional component that is used to capture user input for a gratitude journal. 
+
+The component uses a state to store the text entered by the user and has a function that captures the user's input and updates the state. 
+
+There is also a function that is used to add the user's input to a gratitude list using a function passed in via props. 
+
+When the "Add" button is clicked, this function is called and the user's input is added to the list and the text field is reset to an empty string. 
+
+The component renders an input field and an "Add" button for the user to enter their gratitude and add it to the list.
+
+*/

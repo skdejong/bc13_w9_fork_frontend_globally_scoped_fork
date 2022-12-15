@@ -75,3 +75,25 @@ re-rendering the component only when this state changes */
     </div>
   );
 }
+
+
+/* 
+This code defines a React component called Gratitude, which is responsible for the input and display of gratitude items in the application. 
+
+The Gratitude component uses the useState and useEffect hooks from the React library to manage its internal state and fetch data from the API.
+
+The Gratitude component has two child components: 
+GratitudeInput, which is used to input new gratitude items, and 
+GratitudeList, which is used to display the list of gratitude items. 
+
+The Gratitude component passes the handleCreate and handleDelete functions and 
+the gratitudes state to these child components as props,
+ allowing them to add and delete items from the list.
+
+In order to use this component, you would need to make sure that the React library has been installed and is available in your project. 
+
+You would also need to create the GratitudeInput and GratitudeList components and place them in the specified locations. 
+
+Once you have done this, you can use the Gratitude component in your application by importing it and rendering it in the desired location.
+
+*/

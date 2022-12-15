@@ -74,3 +74,22 @@ h2 {
   background-color: #f5f5fc;
   border-radius: 15px;
 }
+
+
+/* 
+This code defines a stylesheet for the Activities component. 
+
+It specifies the styles for the Activities container, 
+the h2 element that is used to display the category name, 
+the actList class that is used for each list item, 
+the actInput class that is used for the input form, 
+the actButton class that is used for the "add" button, 
+the progress class that is used to display the progress bar, 
+the label class that is used to display the progress label, 
+the scroll class that is used to enable scrolling on the lists, 
+the actTop class that is used to align the elements in the container, and 
+the Activity class that is used for each activity item.
+
+In order to use this stylesheet, you would need to import it into your project and apply the relevant classes to the elements in the Activities component. 
+This would allow you to apply the specified styles to the elements and customize the appearance of the Activities component.
+*/

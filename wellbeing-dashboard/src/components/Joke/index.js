@@ -54,3 +54,14 @@ export default function Joke() {
     </aside>
   );
 }
+
+
+/* 
+The code is a React component called Joke that fetches a random joke from an external API and displays it to the user. 
+
+When the user clicks the refresh button, the component fetches a new joke from the API and updates the displayed joke. 
+
+The component uses the useState hook to store the joke provided by the API and the useEffect hook to fetch the joke when the component is rendered. 
+
+The component also uses the FaRedo icon from the react-icons library to display a refresh icon on the button.
+*/

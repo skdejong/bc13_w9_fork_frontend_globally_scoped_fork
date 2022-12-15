@@ -52,3 +52,19 @@ export default function GratitudeList({
     </div>
   );
 }
+
+
+/* 
+This code defines a React component called GratitudeList, which is responsible for displaying the list of gratitude items in the application. 
+
+The GratitudeList component takes a list prop and a handleDelete prop, which are passed down from the parent Gratitude component. 
+
+The list prop contains the current state of the gratitude list, and 
+the handleDelete prop is a function that can be used to delete items from the list.
+
+The GratitudeList component maps over the items in the list prop, rendering a new <li> element for each item. 
+
+Each <li> element displays the text of the gratitude item and a trash icon that, when clicked, calls the handleDelete function to delete the item from the list.
+
+In order to use this component, you would need to make sure that the React and React-Icons libraries have been installed and are available in your project. You would also need to make sure that the Gratitude component is available and that it is passing the list and handleDelete props to the GratitudeList component. Once you have done this, you can use the GratitudeList component in your application by importing it and rendering it in the desired location.
+*/

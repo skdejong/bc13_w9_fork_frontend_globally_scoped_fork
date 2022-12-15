@@ -165,3 +165,17 @@ export default function Activities() {
     </section>
   );
 }
+
+/* 
+This code defines a React component called Activities, which contains four lists of activities and an input form for adding new items to each list. 
+
+- The Activities component uses the useState hook from the React library to manage its internal state. 
+
+- The handleDelete function is used to delete items from the lists when the user clicks the corresponding "delete" button. 
+
+- The addToList function is used to add new items to the lists when the user enters them in the input form and clicks the "add" button.
+
+The Activities component assumes that the ActivitiesInput component and the FaTrashAlt icon have been imported from the specified files. 
+It also uses the index.css file to apply styles to the components.
+
+*/

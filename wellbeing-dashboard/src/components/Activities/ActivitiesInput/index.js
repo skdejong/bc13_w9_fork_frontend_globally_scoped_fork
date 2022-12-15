@@ -50,3 +50,22 @@ export default function ActivitiesInput({ category, addActivity }) {
     </div>
   );
 }
+
+
+/* 
+This code defines a React component called ActivitiesInput, which represents an input form that allows the user to add items to a list of activities. 
+
+- The ActivitiesInput component uses the useState hook from the React library to manage its internal state. 
+
+- The handleChange function is used to update the state with the current value of the input field, and the handleClick function is used to add the user's input to the list of activities when the user clicks the "add" button.
+
+The ActivitiesInput component takes in two props: category, which specifies the category of the list that the input form is for, and addActivity, which is a function that adds the user's input to the appropriate list. 
+
+It uses these props to determine which list to add the input to and to identify the input field in the DOM.
+
+In order to use this component, you would need to make sure that the React library has been installed and is available in your project. 
+
+You would also need to pass the appropriate props to the ActivitiesInput component when you render it in your application. 
+
+This would allow the ActivitiesInput component to function as intended and add items to the appropriate list.
+*/
